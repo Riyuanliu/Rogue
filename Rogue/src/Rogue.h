@@ -1,4 +1,5 @@
 #pragma once
-#include "..\src\Utility.h"
 
-START_GAME(MYGAME)
+#include "../src/RogueApplication.h"
+#include "../src/Utility.h"
+

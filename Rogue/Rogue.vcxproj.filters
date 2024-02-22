@@ -18,15 +18,21 @@
     <ClInclude Include="src\pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utility.h">
+    <ClInclude Include="src\Rogue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Rogue.h">
+    <ClInclude Include="src\RogueApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RogueApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
