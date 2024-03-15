@@ -3,17 +3,18 @@
 
 class MyGame : public Rogue::RogueApplication {
     virtual void Initialize() override {
-        std::cout << "Initializing game..." << std::endl;
+        
     }
 
     virtual void OnUpdate() override {
-        std::cout << "Engine is running..." << std::endl;
+        std::cout << "Window width: " << Rogue::RogueWindow::GetWindow()->GetWidth() << std::endl;
     }
 
     virtual void Shutdown() override {
-        std::cout << "Shutting down game..." << std::endl;
+       std::cout << "Window width: " << Rogue::RogueWindow::GetWindow()->GetWidth()<< std::endl;
     }
-};
+private:
 
+};
 
 START_GAME(MyGame)

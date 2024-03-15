@@ -7,20 +7,40 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S24_Riyuan_Liu", "S24_Riyua
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rogue", "Rogue\Rogue.vcxproj", "{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glfw", "glfw_build\src\glfw.vcxproj", "{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		MinSizeRel|x64 = MinSizeRel|x64
 		Release|x64 = Release|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{94637F9A-2453-4E0A-871B-A219F4A13C60}.Debug|x64.ActiveCfg = Debug|x64
 		{94637F9A-2453-4E0A-871B-A219F4A13C60}.Debug|x64.Build.0 = Debug|x64
+		{94637F9A-2453-4E0A-871B-A219F4A13C60}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{94637F9A-2453-4E0A-871B-A219F4A13C60}.MinSizeRel|x64.Build.0 = Release|x64
 		{94637F9A-2453-4E0A-871B-A219F4A13C60}.Release|x64.ActiveCfg = Release|x64
 		{94637F9A-2453-4E0A-871B-A219F4A13C60}.Release|x64.Build.0 = Release|x64
+		{94637F9A-2453-4E0A-871B-A219F4A13C60}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{94637F9A-2453-4E0A-871B-A219F4A13C60}.RelWithDebInfo|x64.Build.0 = Release|x64
 		{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}.Debug|x64.ActiveCfg = Debug|x64
 		{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}.Debug|x64.Build.0 = Debug|x64
+		{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}.MinSizeRel|x64.Build.0 = Release|x64
 		{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}.Release|x64.ActiveCfg = Release|x64
 		{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}.Release|x64.Build.0 = Release|x64
+		{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{6D049179-42FE-4F9D-9F93-DBA8AA9F228F}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}.Debug|x64.ActiveCfg = Debug|x64
+		{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}.Debug|x64.Build.0 = Debug|x64
+		{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}.Release|x64.ActiveCfg = Release|x64
+		{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}.Release|x64.Build.0 = Release|x64
+		{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{50E74BBF-DB9B-36B6-BB3C-FE520DA60EF1}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

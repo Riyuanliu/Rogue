@@ -102,10 +102,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>ROGUE_DEBUG==2;%(PreprocessorDefinitions);ROGUE_LIB;ROGUE_LIB,ROGUE_LIB;ROGUE_MS_COMPILER;ROGUE_DEBUG = 2</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ROGUE_DEBUG==2;%(PreprocessorDefinitions);ROGUE_LIB;ROGUE_LIB,ROGUE_LIB;ROGUE_MS_COMPILER;ROGUE_DEBUG = 2;ROGUE_GLFW_WINDOW</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(Solution)glfw\include;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Rogue\src;$(SolutionDir)glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,10 +121,12 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);ROGUE_LIB;ROGUE_LIB;ROGUE_LIB;ROGUE_LIB,ROGUE_LIB;ROGUE_LIB;ROGUE_LIB;ROGUE_LIB;ROGUE_LIB;ROGUE_LIB;ROGUE_MS_COMPILER</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);ROGUE_LIB;ROGUE_MS_COMPILER;ROGUE_GLFW_WINDOW</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Rogue\src;$(SolutionDir)glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,17 +136,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\codeGLFW\WindowGLFW.h" />
     <ClInclude Include="src\Rogue.h" />
     <ClInclude Include="src\RogueApplication.h" />
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\RogueWindow.h" />
     <ClInclude Include="src\Utility.h" />
+    <ClInclude Include="src\WindowImpl.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\codeGLFW\WindowGLFW.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\RogueApplication.cpp" />
+    <ClCompile Include="src\RogueWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\glfw_build\src\glfw.vcxproj">
+      <Project>{50e74bbf-db9b-36b6-bb3c-fe520da60ef1}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

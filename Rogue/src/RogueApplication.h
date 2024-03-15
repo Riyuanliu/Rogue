@@ -11,4 +11,5 @@ namespace Rogue {
         void Run();
     private:
     };
+
 }
