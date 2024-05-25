@@ -298,7 +298,11 @@ MyGame::MyGame() {
 				else if (randNum < 75) difficulty = Enemy::Difficulty::l6;
 				else if (randNum < 85) difficulty = Enemy::Difficulty::l7;
 				else if (randNum < 95) difficulty = Enemy::Difficulty::l8;
-				else difficulty = Enemy::Difficulty::l9;
+				else {
+					difficulty = Enemy::Difficulty::l9;
+					enemies.emplace_back(Enemy::Difficulty::l10, x, y);
+					enemies.emplace_back(Enemy::Difficulty::l10, x, y);
+				}
 			}
 
 			// Create and add the enemy
@@ -361,6 +365,7 @@ MyGame::MyGame() {
 				// Handle collision between character and enemy
 				// For example, reduce character health or perform other actions
 				main_character.takeDamage(enemyIt->getDamage());
+				enemyIt->takeDamage(enemyIt->getDamage() / 3);
 				break;
 			}
 		}

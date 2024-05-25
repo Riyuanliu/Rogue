@@ -30,7 +30,7 @@ private:
     score score;
     enum class State { moving = 0, stopped = 1 } mState;
     Player main_character;
-    Rogue::Image background{ "C:\\Users\\Riyuan Liu\\Documents\\GameEngine\\S24_Riyuan_Liu\\Rogue\\Assets\\Textures\\Background.png" };
+    Rogue::Image background{ "../Assets/Textures/Background.png" };
     std::vector<Bullets> bullets;
     std::unordered_map<int, bool> keyStates;
     std::chrono::time_point<std::chrono::steady_clock> gameStartTime;

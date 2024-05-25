@@ -33,6 +33,9 @@ Enemy::Enemy(Difficulty level, int x, int y)
     case Difficulty::l9:
         image = Rogue::Image("../Assets/Textures/Enemy/Enemy_9.png");
         break;
+    case Difficulty::l10:
+        image = Rogue::Image("../Assets/Textures/Enemy/Enemy_10.png");
+        break;
     }
     width = image.GetWidth();
     height = image.GetHeight();
@@ -129,6 +132,12 @@ void Enemy::initializeAttributes() {
         speed = 1.6;
         point = 256; // Add point value for level 9
         damage = 256; // Add damage value for level 9
+        break;
+    case Difficulty::l10:
+        health = 20;
+        speed = 5;
+        point = 256; // Add point value for level 9
+        damage = 6; // Add damage value for level 9
         break;
     default:
         // Handle default case if needed

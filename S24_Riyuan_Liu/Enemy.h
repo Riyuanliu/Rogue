@@ -14,7 +14,8 @@ public:
         l6,
         l7,
         l8,
-        l9
+        l9,
+        l10
     };
 
     Enemy(Difficulty level, int x, int y);

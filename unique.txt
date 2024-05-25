@@ -1,0 +1,54 @@
+Unique Features and Game Rules
+
+Game Rules
+Objective: The main objective of the game is to survive as long as possible while defeating enemies to score points.
+
+
+Player Control: 
+The player controls the main character, who can move in four directions (up, down, left, right) using the arrow keys, use space to shoot.
+
+Enemy Interaction:
+Enemies appear on the screen and move towards the player. The player must avoid or defeat them to survive.
+
+Health: 
+The player has a limited amount of health. If the player's health reaches zero, the game is over.
+
+Scoring:
+Players earn points by defeating enemies. The score is displayed on the screen.
+
+Unique Features
+1. Dynamic Enemy Difficulty
+Difficulty Levels: Enemies come with different difficulty levels. The difficulty increases as the game progresses, adding more challenging enemies over time.
+
+
+Dynamic Upgrading: 
+
+Specific enemies upgrade to a higher difficulty level when certain conditions are met (e.g., when they reach a specific point on the screen or after a certain period).
+
+2. Advanced Collision Detection
+Transparent Pixel Handling: 
+The collision detection system has been upgraded to account for transparent pixels in sprites, allowing for more precise and accurate collision detection between characters and objects.
+Unpassable Terrain: The game includes unpassable terrain and walls that players and enemies must navigate around, adding a strategic element to movement and positioning.
+
+3. Enemy Spawning System
+Intelligent Spawning: 
+Enemies are spawned intelligently around the player to ensure a balanced challenge. The system prevents overcrowding and provides a fair gameplay experience.
+
+Varied Enemy Types: 
+There are multiple types of enemies, each with unique behaviors and attributes. Some enemies might be faster, while others are tougher or have special abilities.
+
+4. Player Abilities
+Shooting Mechanism: 
+The main character can shoot projectiles to defeat enemies. The shooting mechanism includes cooldowns and ammo management, adding depth to combat strategies.
+
+Power-ups: 
+The game features various power-ups that the player can collect. These power-ups provide temporary boosts such as increased speed, health regeneration, or enhanced shooting abilities.
+
+5. Scoring and Rewards System
+Dynamic Scoring: 
+The scoring system is dynamic, providing different points based on the enemy's difficulty level and how the enemy was defeated.
+
+Rewards: 
+Players receive rewards for reaching specific score milestones, such as extra health, additional ammo, or temporary invincibility.
+
+By incorporating these unique features, our game provides a rich and engaging experience that stands out from typical games in the genre.
