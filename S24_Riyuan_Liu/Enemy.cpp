@@ -87,43 +87,43 @@ void Enemy::initializeAttributes() {
         break;
     case Difficulty::l2:
         health = 100;
-        speed = 2;
+        speed = 2.5;
         point = 2; // Add point value for level 2
         damage = 2; // Add damage value for level 2
         break;
     case Difficulty::l3:
         health = 200;
-        speed = 1.5;
+        speed = 2;
         point = 4; // Add point value for level 3
         damage = 4; // Add damage value for level 3
         break;
     case Difficulty::l4:
         health = 300;
-        speed = 1.2;
+        speed = 1.8;
         point = 8; // Add point value for level 4
         damage = 8; // Add damage value for level 4
         break;
     case Difficulty::l5:
         health = 400;
-        speed = 1.1;
+        speed = 1.6;
         point = 16; // Add point value for level 5
         damage = 16; // Add damage value for level 5
         break;
     case Difficulty::l6:
         health = 800;
-        speed = 1.09;
+        speed = 1.4;
         point = 32; // Add point value for level 6
         damage = 32; // Add damage value for level 6
         break;
     case Difficulty::l7:
         health = 1600;
-        speed = 1.08;
+        speed = 1.5;
         point = 64; // Add point value for level 7
         damage = 64; // Add damage value for level 7
         break;
     case Difficulty::l8:
         health = 1700;
-        speed = 1.7;
+        speed = 1.5;
         point = 128; // Add point value for level 8
         damage = 128; // Add damage value for level 8
         break;
