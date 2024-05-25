@@ -20,13 +20,13 @@ int main()\
 #endif
 
 
-#if ROGUE_DEBUG == 2
-#define ROGUE_ERROR(x) std::cout<<x<<std::endl;
-#define ROGUE_LOG(x) std::cout<<x<<std::endl;
-#elif ROGUE_DEBUG ==1
-#define ROGUE_ERROR(x) std::cout<<x<<std::endl;
-#define ROGUE_LOG(x) std::cout<<x<<std::endl;
+#if ROGUE_DEBUG==2
+	#define ROGUE_ERROR(x) std::cout<<x<<std::endl;
+	#define ROGUE_LOG(x) std::cout<<x<<std::endl;
+#elif ROGUE_DEBUG==1
+	#define ROGUE_ERROR(x) std::cout<<x<<std::endl;
+	#define ROGUE_LOG(x) std::cout<<x<<std::endl;
 #else
-#define ROGUE_ERROR(x) 
-#define ROGUE_LOG(x)
+	#define ROGUE_ERROR(x) 
+	#define ROGUE_LOG(x)
 #endif

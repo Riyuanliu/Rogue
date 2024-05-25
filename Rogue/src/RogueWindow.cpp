@@ -46,4 +46,16 @@ namespace Rogue {
 	{
 		return mWindow->GetHeight();
 	}
+	void RogueWindow::SetKeyPressedCallback(std::function<void(const KeyPressed&)>& callbackFunc)
+	{
+		mWindow->SetKeyPressedCallback(callbackFunc);
+	}
+	void RogueWindow::SetKeyReleasedCallback(std::function<void(const KeyReleased&)>& callbackFunc)
+	{
+		mWindow->SetKeyReleasedCallback(callbackFunc);
+	}
+	void RogueWindow::SetWindowCloseCallback(std::function<void()>& callbackFunc)
+	{
+		mWindow->SetWindowCloseCallback(callbackFunc);
+	}
 }
